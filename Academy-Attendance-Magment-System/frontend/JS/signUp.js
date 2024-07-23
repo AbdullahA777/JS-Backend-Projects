@@ -31,7 +31,7 @@ const API_URL = 'http://localhost:5000/api/v1/users/signup';
                 console.log(data);
             } catch (error) {
                 console.error('Error while fetching:', error);
-                handleResponse.textContent = 'An error occurred. Please try again later.';
+                handleResponse.textContent = 'An error occurred, Please try again later.';
                 handleResponse.style.color = 'red'; // Error message color
             }
         });

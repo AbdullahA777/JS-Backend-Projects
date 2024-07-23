@@ -26,6 +26,9 @@ dbConnect()
 
     })
 
+// import routes from router folder
 
+import taylorRouter from "./src/routes/taylor.route.js"   
 
+app.use("/api/v1/taylors", taylorRouter)
 
