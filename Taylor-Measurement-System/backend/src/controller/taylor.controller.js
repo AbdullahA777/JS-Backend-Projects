@@ -58,7 +58,7 @@ const signUpTaylor = async (req, res) => {
 
 // Taylor LogIn
 
-const logInTaylor = async (req, res) => {
+const signInTaylor = async (req, res) => {
 
     try {
 
@@ -95,6 +95,6 @@ const logInTaylor = async (req, res) => {
 export {
 
     signUpTaylor,
-    logInTaylor
+    signInTaylor
 
     }

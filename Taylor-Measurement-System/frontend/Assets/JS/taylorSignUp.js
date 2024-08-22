@@ -1,6 +1,6 @@
 const signUpForm = document.querySelector('.signUp-form')
-console.log(signUpForm);
-signUpForm.addEventListener("submit", (e) => {
+
+signUpForm.addEventListener("submit", async (e) => {
 
     e.preventDefault();
 
@@ -10,20 +10,31 @@ signUpForm.addEventListener("submit", (e) => {
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
     
-    console.log(name, email, shopName, password);
+    if (!name || !shopName || !email || !password) {
+        alert('All fields are required. in frontend')
+        return;
+    }
 
-    fetch(api,
-        {
-            method: 'POST',
-            body: JSON.stringify
-                (
-                    { name, shopName, email, password }
-                ),
-        }
-    ).then((res) => res.json())
-    .then((data) => {
+    try {
+        const reponse = await fetch(api,
+            {
+                method: 'POST',
+                headers : { 'Content-Type': 'application/json' } ,
+                body: JSON.stringify
+                    (
+                        { name, shopName, email, password }
+                    ),
+            }
+        );
+
+        const data = await reponse.json()
+
         alert(data.message)
 
-    }).catch((err) => console.log(err))
+
+    } catch (error) {
+        console.error("Fetching error:", error)
+        alert('An error occured. Please check your network and try again.')
+    }
 
 })

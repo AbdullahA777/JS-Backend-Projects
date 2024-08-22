@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Client Measurement</title>
+    <link rel="stylesheet" href="Assets/CSS/clientMeasurement.css">
+    <link rel="stylesheet" href="Assets/CSS/navbar.css">
+    <link rel="stylesheet" href="Assets/CSS/Utils.css">
+    <link rel="stylesheet" href="Assets/CSS/measurements.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="navbar-left">
+                <a href="navbar.html" class="navbar-link">Home</a>
+            </div>
+
+            <div class="navbar-right">
+                <a href="measurements.html" class="navbar-link">Measurements</a>
+                <a href="taylorSignIn.html" class="navbar-link">Login</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="main-container">
+
+        <div class="container">
+
+            <h1>Create Client Measurement</h1>
+
+            <form class="form" id="clientMeasurementForm">
+
+                <div class="form-group">
+                    <label for="taylorID">Taylor ID</label>
+                    <input type="text" id="taylorID" name="taylorID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientName">Client Name</label>
+                    <input type="text" id="clientName" name="clientName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientPhone">Client Phone</label>
+                    <input type="tel" id="clientPhone" name="clientPhone" required>
+                </div>
+
+                <h2>Measurements</h2>
+
+                <div class="form-group">
+                    <label for="chest">Chest</label>
+                    <input type="number" id="chest" name="chest" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="waist">Waist</label>
+                    <input type="number" id="waist" name="waist" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hips">Hips</label>
+                    <input type="number" id="hips" name="hips" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="shoulder">Shoulder</label>
+                    <input type="number" id="shoulder" name="shoulder" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sleeveLength">Sleeve Length</label>
+                    <input type="number" id="sleeveLength" name="sleeveLength" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inseam">Inseam</label>
+                    <input type="number" id="inseam" name="inseam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="outseam">Outseam</label>
+                    <input type="number" id="outseam" name="outseam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="neck">Neck</label>
+                    <input type="number" id="neck" name="neck" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height</label>
+                    <input type="number" id="height" name="height" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight</label>
+                    <input type="number" id="weight" name="weight" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="Assets/JS/clientMeasurement.js"></script>
+
+
+</body>
+
+</html>
